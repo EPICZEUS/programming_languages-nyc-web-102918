@@ -1,3 +1,8 @@
 def reformat_languages(languages)
-  # your code here
+  out = {}
+  
+  languages.each do |style, lang|
+    lang.each do |k, val|
+      out[k] = val
+      out[k][:style] = style
 end
