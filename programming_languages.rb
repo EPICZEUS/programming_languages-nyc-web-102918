@@ -7,4 +7,6 @@ def reformat_languages(languages)
       out[k][:style] = style
     end
   end
+  
+  out
 end
