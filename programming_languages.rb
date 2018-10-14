@@ -5,4 +5,6 @@ def reformat_languages(languages)
     lang.each do |k, val|
       out[k] = val
       out[k][:style] = style
+    end
+  end
 end
