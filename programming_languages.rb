@@ -3,8 +3,10 @@ def reformat_languages(languages)
   
   languages.each do |style, lang|
     lang.each do |k, val|
-      out[k] = out[k] || val
-      out[k][:style] = style
+      unless out[k]
+        out[k] = val
+        out[k][:style] = []
+      out[k][:style] << style
     end
   end
   
