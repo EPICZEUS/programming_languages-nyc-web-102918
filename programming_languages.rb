@@ -6,6 +6,7 @@ def reformat_languages(languages)
       unless out[k]
         out[k] = val
         out[k][:style] = []
+      end
       out[k][:style] << style
     end
   end
